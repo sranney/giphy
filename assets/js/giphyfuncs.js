@@ -38,9 +38,9 @@
 			var rating=$('input[name=optradio]:checked', 'form').attr("id");
 			//create url - depending on if user set rating
 			if (typeof rating == 'undefined'){		
-				var queryURL = "http://api.giphy.com/v1/gifs/search?q="+search+"&api_key="+apiKey+"&limit="+numResults;
+				var queryURL = "https://api.giphy.com/v1/gifs/search?q="+search+"&api_key="+apiKey+"&limit="+numResults;
 			} else {
-				var queryURL = "http://api.giphy.com/v1/gifs/search?q="+search+"&api_key="+apiKey+"&limit=100&rating="+rating;
+				var queryURL = "https://api.giphy.com/v1/gifs/search?q="+search+"&api_key="+apiKey+"&limit=100&rating="+rating;
 			}
 			//ajax function, using url set above, get data
 			$.ajax({
