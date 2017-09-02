@@ -52,7 +52,7 @@
 					//reformulate imgurl to allow still and animate states
 					var imgURL = response.data[i].embed_url;
 					imgURL = imgURL.replace("embed","media");
-					imgURL = imgURL.replace("http://","http://media1.").replace("https://","http://media1.");
+					imgURL = imgURL.replace("http://","https://media1.").replace("https://","http://media1.");
 					imgURL+="/200_s.gif";
 					//use this to create new img element
 					var newIMG = $("<img src='"+imgURL+"'>");
