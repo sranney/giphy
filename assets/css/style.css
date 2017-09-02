@@ -1,0 +1,29 @@
+		body{
+			background-color:#524A42;
+		}
+
+		input[type="text"]{/*style for new button input */
+			border-radius:15px;
+			width:100%;
+			margin-bottom:10px;
+		}
+
+		.jumbotron{
+			margin:30px 0px;
+			background-color:#AD9E8D;
+		}
+		.giphyContainer.text-center{
+			background-color:#441313;
+			margin-bottom:15px;
+			padding:15px 0px;
+			font-size:30px;
+			color:#D69725;
+		}
+
+		button{
+			background-color:#441313;
+			border:2px solid #D69725;
+			margin:3px;
+			border-radius:5px;
+			color:#D69725;
+		}

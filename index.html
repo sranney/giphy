@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+	<div class="container">	
+	
+		<form class="jumbotron">
+			<h1 class="text-center">Harry Potter GIPHY</h1><!--title-->
+			<input type = "text" id = "giphyText" placeholder = "enter phrase to add new button"><!--text box to allow user to input text-->
+
+			<button type = "button" id = "createGenreBtns">Generate Button</button><br> <!-- button to generate buttons-->
+			
+				<label>Select number of results: <!--dropdown select menu-->
+					<select id="numResults">
+						<option selected="selected">1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+						<option>7</option>
+						<option>8</option>
+						<option>9</option>
+						<option>10</option>					
+					</select>
+				</label><br>
+
+				<label>Choose Rating:<!--radio buttons to choose rating-->
+				<label class='radio-inline'><input type = "radio" id = "y" name="optradio">Y</label>
+				<label class='radio-inline'><input type = "radio" id = "g" name="optradio">G</label>
+				<label class='radio-inline'><input type = "radio" id = "pg" name="optradio">PG</label>
+				<label class='radio-inline'><input type = "radio" id = "pg-13" name="optradio">PG-13</label>
+				<label class='radio-inline'><input type = "radio" id = "r" name="optradio">R</label>
+				</label><br>
+
+				<div id="giphyBtns"></div><!--area for gif buttons-->
+
+		</form>
+
+
+		<div id = "giphyRow"></div><!--area for gifs-->
+
+	</div>
+
+	<script src="assets/js/giphyfuncs.js"></script>
+</body>
+</html>
